@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    background:url(55549.png);
+    background-size: cover;
+   
+}
+nav{
+    background-color:rgba(0, 0, 0, 0.3);
+    height: 4.0rem;
+}
+.logo{
+    color: white;
+    font-size: 1.3rem;
+    line-height: 60px;
+    padding: 5px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-right: 1.8rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+a:hover{
+    background-color: blanchedalmond;
+    transform: all  .5s ease;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+.check-btn{
+    font-size: 1.2rem;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 1.3rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    .logo{
+        font-size: 0.8rem;
+        padding-left: 2rem;
+    }
+    nav ul li a{
+        font-size: 0.6rem;
+    }
+}
+main{
+    width: 100%;
+    height: 85vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+    text-align: center;
+}
+.main_section h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    margin: 30px 0px 20px 0px;
+    color: white;
+}
+.main_section h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    margin: 1.8rem 0px 1.2rem 0px;
+    color: white;
+}
+.main_section a{
+    padding: 10px 10px;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    margin-top: 0.8rem;
+
+}
+.main_section .Button{
+   background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    position: relative;
+    top: 80px;
+    
+}
+.main_section .Button:hover{
+    
+}
+.change_content:after{
+    content: '';
+    animation: changetext 30s  infinite linear;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    transition: all 3s;
+}
+@keyframes changetext{
+    0%{
+        content: "A LEVEL";
+    }
+    10%{
+        content: "O LEVEL";
+    }
+    20%{
+        content:"C LANGUAGE";
+    }
+    30%{
+        content:"WEB DESIGNING";
+    }
+    40%{
+        content:"PYTHON";
+    }
+    50%{
+        content: "C++ LANGUAGE";
+    }
+    60%{
+        content:"CCC+";
+    }
+    70%{
+        content:"CCC";
+    }
+    80%{
+        content:"ADCA";
+    }
+    90%{
+        content: "PGDCA";
+    }
+    100%{
+        content:"DCA";
+    }
+}
+@media (max-width:600px){
+    .check-btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 33vh;
+        background-color:rgba(0, 0, 0, 0.6);
+        top: 4rem;
+        text-align: center;
+        left: -100%;
+        transition: all .6s ease;
+    }
+    nav ul li{
+        display: block;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    .change_content:after{
+        font-size: 0.8rem;
+    }
+    .main_section h1{
+        font-size: 0.8rem;
+       
+    }
+
+}

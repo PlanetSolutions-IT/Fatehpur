@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.main{
+    width:100%;
+  
+    background: #ff7e5f;
+    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    
+
+    background-size: cover;
+}
+.main h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+.container{
+    width:100%;
+    margin:auto;
+    flex-wrap:wrap;
+    display:flex;
+    justify-content: space-around;
+
+}
+.course{
+    flex-basis: 23%;
+    box-shadow: 0px 0px 10px 3px gray;
+    margin:20px 10px;
+    color: white;
+    background-color:black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align:center;
+    padding: 10px 10px; 
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.course h2{
+    padding: 10px 0px;
+}
+.course p{
+    font-size:12px;
+    padding: 20px 10px;
+}
+.course button{
+    background: blue;
+    /* padding: 7px 20px; */
+    color:antiquewhite;
+    border-radius: 9px;
+    border: none;
+}
+.course button a{
+    background: blue;
+    padding: 7px 20px;
+    color:antiquewhite;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+}
+.course:hover{
+    background: black;
+    color:white
+}
+
+}
+.course:hover h2,.course:hover p{
+    color: antiquewhite;
+}
+.course:hover button{
+    background: white;
+    color: black;
+    border: 1px solid white;
+}
+
+
+
+@media only screen and (min-width:200px) and (max-width:800px) {
+    .container{
+            width: 100%;
+           flex-direction: column;
+            
+}
+    .course{
+        margin:10px;
+    }
+}
